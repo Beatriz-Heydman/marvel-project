@@ -3,7 +3,6 @@
 //Libs
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { PUBLIC_KEY, hash, timestamp } from "../../keys";
 import { useParams } from "react-router";
 
 //Components
@@ -23,7 +22,7 @@ import { formatThumbnail } from "../../utils/format-thumnail";
 export function CharactersHqPage() {
   const { comic_id } = useParams();
 
-  const charactersRoute = `https://gateway.marvel.com/v1/public/comics/${comic_id}/characters?ts=${timestamp}&apikey=${PUBLIC_KEY}&hash=${hash}`;
+  const charactersRoute = `https://gateway.marvel.com/v1/public/comics/${comic_id}/characters?ts=${process.env.REACT_APP_TIMESTAMP}&apikey=${process.env.REACT_APP_PUBLIC_KEY}&hash=${process.env.REACT_APP_HASH}`;
 
   const [characters, setCharacters] = useState<Character[]>([]);
 

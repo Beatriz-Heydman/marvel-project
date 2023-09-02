@@ -25,6 +25,8 @@ import { formatThumbnail } from "../../utils/format-thumnail";
 export function ComicsHQPage() {
   const [hqs, setHqs] = useState<Hq[]>([]);
 
+  console.log(process.env);
+
   const [isLoading, setIsLoading] = useState(false);
 
   const [quantityOfHqs, setQuantityOfHqs] = useState(10);
