@@ -4,7 +4,7 @@ import { StyledCard } from "./styles";
 //Types
 import { CardProps } from "./types";
 
-export function Card({ hqName, hqUrl, onClick }: CardProps) {
+export function CardHq({ hqName, hqUrl, onClick }: CardProps) {
   const isDefaultImage = hqUrl?.includes("image_not_available");
 
   return (

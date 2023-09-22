@@ -20,6 +20,14 @@ export const ComicsHQsPageContainer = styled.div`
   padding-bottom: 2rem;
   color: white;
 
+  .MuiSkeleton-wave {
+    border-radius: 0.25rem;
+
+    ::after {
+      background: linear-gradient(90deg, transparent, #717171, transparent);
+    }
+  }
+
   .button_load_more {
     display: flex;
     align-items: flex-start;
