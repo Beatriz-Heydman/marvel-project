@@ -7,10 +7,16 @@ export const StyledHeader = styled.header`
   min-height: 95px;
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  align-items: center;
+  padding: 0 2rem 0 2rem;
   z-index: 999;
+
   img {
     width: 150px;
+
+    @media (max-width: 550px) {
+      width: 100px;
+    }
   }
 
   .link {

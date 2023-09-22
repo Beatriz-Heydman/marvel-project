@@ -8,7 +8,7 @@ export const MainPageBackground = styled.div<MainPageBackgroundProps>`
   background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
   transition: all ease 0.2s;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
 `;
@@ -16,19 +16,42 @@ export const MainPageBackground = styled.div<MainPageBackgroundProps>`
 export const MainPageContainer = styled.div`
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  min-height: 100vh;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   padding-bottom: 2rem;
-  overflow: hidden;
+
+  .main_content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    gap: 3rem;
+
+    @media (max-width: 750px) {
+      flex-direction: column;
+    }
+  }
 
   .hero_image {
-    right: 100px;
-    position: fixed;
+    width: 500px;
+    @media (max-width: 1250px) {
+      width: 400px;
+    }
+
+    @media (max-width: 800px) {
+      width: 350px;
+    }
+
+    @media (max-width: 700px) {
+      top: 50%;
+      position: none;
+    }
   }
 
   .main_page_description {
@@ -44,7 +67,7 @@ export const MainPageContainer = styled.div`
     height: fit-content;
     border-radius: 2rem;
     margin-inline: auto;
-    z-index: 999;
+    z-index: 9999;
   }
 
   .home_icon {

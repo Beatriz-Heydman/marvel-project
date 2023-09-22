@@ -22,12 +22,8 @@ export function MainPage() {
     >
       <MainPageContainer>
         <Header isMainPage />
-        <Flex
-          gap="3rem"
-          justifyContent="center"
-          alignItems="center"
-          style={{ width: "50%" }}
-        >
+
+        <div className="main_content">
           <Flex justifyContent="flex-start" style={{ maxWidth: "500px" }}>
             <h1>{infosMainPage[currentInfoIndex].title}</h1>
             <p className="main_page_description">
@@ -39,7 +35,8 @@ export function MainPage() {
             src={infosMainPage[currentInfoIndex].url_image}
             alt="Logo da Marvel"
           />
-        </Flex>
+        </div>
+
         <Flex
           className="buttons_container"
           gap="0.75rem"

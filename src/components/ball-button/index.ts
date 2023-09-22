@@ -1,5 +1,6 @@
 //Libs
 import styled from "styled-components";
+
 //Types
 import { BallButtonProps } from "./types";
 

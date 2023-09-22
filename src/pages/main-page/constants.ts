@@ -30,7 +30,7 @@ export const infosMainPage: InfoMainPage[] = [
   {
     title: "LOKI",
     description:
-      "O Homem-Aranha é um estudante do ensino médio que ganha habilidades incríveis após ser picado por uma aranha radioativa. Com suas habilidades de super-herói, ele luta contra o crime em Nova York e é amado por fãs de todas as idades.",
+      "Loki é um deus nórdico adotado por Odin, é conhecido por ser astuto e charmoso, com habilidades mágicas como metamorfose e ilusões. Sua jornada no MCU o faz alternar entre ser um vilão e um anti-herói, explorando questões de identidade e redenção.",
     url_image: "/images/loki.png",
     background_image_url: "/images/wpp-loki.jpg",
   },

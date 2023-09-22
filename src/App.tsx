@@ -1,7 +1,7 @@
 //Libs
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-//Components
+//Pages
 import { MainPage } from "./pages/main-page";
 import { ComicsHQPage } from "./pages/comics-hq";
 import { CharactersHqPage } from "./pages/characters-hq";
